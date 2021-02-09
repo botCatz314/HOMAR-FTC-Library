@@ -48,10 +48,10 @@ public class BNO055HolonomicBot extends Robot {
         imu.initialize(parameters);
         while (!imu.isGyroCalibrated());
 
-        frontLeft = hardwareMap.get(DcMotor.class, "driveFrontLeft");
-        frontRight = hardwareMap.get(DcMotor.class, "driveFrontRight");
-        backLeft = hardwareMap.get(DcMotor.class, "driveBackLeft");
-        backRight = hardwareMap.get(DcMotor.class, "driveBackRight");
+        frontLeft = hardwareMap.get(DcMotor.class, "frontL");
+        frontRight = hardwareMap.get(DcMotor.class, "frontR");
+        backLeft = hardwareMap.get(DcMotor.class, "backL");
+        backRight = hardwareMap.get(DcMotor.class, "backR");
 
         //servo = hardwareMap.get(Servo.class, "servo");
         //servoActivator = new ServoActivator(servo, 1, 0);
